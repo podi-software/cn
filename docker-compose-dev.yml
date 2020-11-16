@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  my_task:
+    volumes:
+      - ./:/home/cn/
+    command: tail -f /dev/null
+

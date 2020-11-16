@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  my_task:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: my-task
+    environment:
+      - "PORT=${PORT}"
+    ports:
+      - "${PORT}:${PORT}"
